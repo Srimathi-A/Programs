@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            let json={"data":[
+                 {"name":"sri","age":"20","gender":"female"},
+                 {"name":"kavi","age":"19","gender":"female"}, 
+                 {"name":"priya","age":"25","gender":"female"}, 
+                 {"name":"sathya","age":"27","gender":"female"}, 
+                 {"name":"indhu","age":"35","gender":"female"},
+                 {"name":"hema","age":"40","gender":"female"},
+                 {"name":"raji","age":"48","gender":"female"},
+                 {"name":"ramu","age":"67","gender":"male"},
+                 {"name":"komu","age":"23","gender":"female"},
+                ]}
+                let innerHtml=" ";
+                json.data.forEach(user =>{
+                    innerHtml=`${innerHtml}<tr>
+                        <td>${user.name}<\td>
+                        <td>${user.age}<\td>
+                        <td>${user.gender}<\td>
+                        <\tr>`
+                })
+                $("tbody").html(inerHtml);
+                //$(".tablebody").html=innerHtml;
+                //$("test").html=innerHtml;
+            
+            </script>
+            </head>
+            <body>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>age</th>
+                            <th>gender</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tableBody"id="test">
+                        <tr>
+                            <td>
+                                Gokul
+                            </td>
+                            <td>
+                                23
+                            </td>
+                            <td>
+                                male
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <script>
+                        loadData();
+                    </script>
+                </body>
+            </html>
+
+            

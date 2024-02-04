@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                width:20px;
+                height:100px;
+                background-color: brown;
+                color:white;
+                font-size:2em;
+                text-align:center;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     
+    </head>
+    <body>
+        <div class="box">hello</div>
+        <div class="box2">world</div>
+        <script>
+            $(".box").click(function() {
+                $("box2").css("visibility","visibility");
+            });
+            $(".box2").on("click",function (){
+                $("box2: ").css("visibility","visibilty");
+                $(".box2").css("background-color","green");
+            });
+
+            function boxclick(){
+                alert("box1")
+            }
+        </script>
+    </body>
+</html>

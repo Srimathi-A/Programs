@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function User(name,age,gender){
+                this.name=name;
+                this.age=age;
+                this.gender=gender;
+                this.getName =function(){
+                    return`$(this.name) $(this.age) \$(this.gender)`
+                }
+            }
+            let user1=new User("srimathi",20,"female")
+            let user2=new User("kavi",19,"female")
+            let user3=new User("priya",23,"female")
+            console.log("***********user***********")
+        </script>
+    </head>
+</html>

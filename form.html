@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function submit(){
+                console.log("function call");
+                let name=document.signup.name.value;
+                let passsword=document.signup.password.value;
+                let retypepassword=document.signup.retypepassword.value;
+                if(name && name.length !==0 &&password&&password.length< 0 && retypepassword &&retypepassword)
+                {
+                    alert("successs");
+                    return true;
+
+                }
+                else if(!name || !password || !retypepassword){
+                    alert("please fill this form");
+                    return false;
+                }
+                else if(name.length==0)
+                {
+                    alert("please enter name");
+                    return false;
+                }
+                else if(password.length <6){
+                    alert("please enter valid password");
+                    return false;
+                }
+                else if(retypepassword==password)
+                {
+                    alert("password mis-match");
+                    return false;
+                }
+                else{
+                    alert("please fill this form");
+                    return false;
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Name:<input type="text" name="name"placeholder="name"/>
+            password:<input type="password" name="password" placeholder="password"/>
+            re enter password<input type="password"name="retypepassword"/>
+            <input type="submit"value="register"/>
+        </form>
+    </body>
+</html>

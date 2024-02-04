@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+       
+        <input type="text" placeholder="Lat" id="lat" name="lat"/>
+        <input type="text" placeholder="ling" id="long" name="long"/>
+        <button type="submit" onclick="submit()">submit</button>
+        <div id="res"></div>
+
+       <script>
+        function submit(){ 
+            let lat=document.getElementById("lat").value
+            let long=document.getElementById("long").value
+            fetch('http://api.geonames.org/timezoneJSON?lat=${lat}&lng=${long}&username=ranjith',{method:'GET'})
+            .then(response => respone.text())
+            .then(result => {
+                result = JSON.parse(result);
+                let innerhtml =`<p>Sunrise : ${result.$sunrise}</p><p>Sunset:${result.$unset}</p>`
+                document.getElementById("res").innerHtml=innerhtml
+                console.log(result)
+            })
+            .catch(error => console.log('error', error));
+        }
+       </script>
+    </body>
+</html>

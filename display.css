@@ -1,0 +1,25 @@
+.container{
+    height: 500px;
+    width: 500px;
+    margin: 0%;
+}
+img{
+    height: 650px;
+    width: 1500px;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    position:absolute;
+    left:45%;
+    top:50%;
+    transform:translate(-50px,-50px);
+    background-color:gray;
+    padding:40px;
+    opacity: 0.5;
+    box-shadow:0 0 35px black;
+    
+
+}

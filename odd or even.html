@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function arrayFilter(){
+                let arr=[2,3,7,9,8,5,6,4,3,5,6]
+                let json={"data":[
+                 {"name":"sri","age":"20","gender":"female"},
+                 {"name":"kavi","age":"19","gender":"female"}, 
+                 {"name":"priya","age":"25","gender":"female"}, 
+                 {"name":"sathya","age":"27","gender":"female"}, 
+                 {"name":"indhu","age":"35","gender":"female"},
+                 {"name":"hema","age":"40","gender":"female"},
+                 {"name":"raji","age":"48","gender":"female"},
+                 {"name":"ramu","age":"67","gender":"male"},
+                 {"name":"komu","age":"23","gender":"female"},
+                ]}
+                kidsArray=json.data.filter(user => user.age<18 && user.gender==="female")
+               mapArray=json.data.map(user => '${user.name} ${user.age}/${user.gender.substring(0,1).touppercase}')
+                alert('kids ${JSON.stringify(kidsArray)}')
+                alert('map ${maparray}')
+            }
+           // arrayFilter();
+           function stringFunction()
+           {
+            let title="hello world";
+            console.log('string ${title}:includes ${title.includes("world")}')
+
+           }
+               
+            
+        </script>
+    </head>
+</html>

@@ -1,0 +1,51 @@
+:root {
+    font-size: 10px;
+  }
+  
+  h1{
+    background-color:white ;
+    color:blue ;
+  }
+  img{
+    border-radius:50% ;
+    height: 100px;
+    width:100px;
+  }
+  .line{
+    border:5px solid gray ;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fff;
+  }
+  
+  .flex-container > div {
+    background-color: papayawhip;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 30px;
+  }
+  .line{
+    border:5px solid gray;
+  }
+  span{
+    margin:20px ;
+    
+  }
+  .flex{
+    display:flex;
+    flex-wrap:nowrap;
+    background-color: #fff;
+    
+  }
+  
+
+  
+  
+  
+ 
+  
+  

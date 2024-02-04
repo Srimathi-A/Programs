@@ -1,0 +1,20 @@
+h1,h3{
+  font-size: 25px;
+  font-family: Whyte,sans-serif;
+  line-height: 125%;
+  text-align: center;
+  color: black;
+  letter-spacing: 1px;
+}
+.container input{
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 30px;
+  margin: 0px auto;
+  justify-content: center;
+  width: 50%;
+  border-color:black ;
+  text-align: center;
+  
+}
+ 
